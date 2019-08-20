@@ -19,7 +19,7 @@ public struct LocationManager {
 		public init () {}
 
     public func checkLocationAuthorizationStatus() {
-        if locationManager.authorizationStatus() != .authorizedAlways {
+        if CLLocationManager.authorizationStatus() != .authorizedAlways {
             locationManager.requestAlwaysAuthorization()
         }
     }

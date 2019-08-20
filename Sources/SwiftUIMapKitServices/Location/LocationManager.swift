@@ -9,10 +9,17 @@
 import MapKit
 
 public struct LocationManager {
-    public let locationManager = CLLocationManager()
+	
+		 // MARK: - Instance Properties
+	
+    private let locationManager = CLLocationManager()
+	
+		// MARK: - Initialization
+	
+		public init () {}
 
     public func checkLocationAuthorizationStatus() {
-        if CLLocationManager.authorizationStatus() != .authorizedAlways {
+        if locationManager.authorizationStatus() != .authorizedAlways {
             locationManager.requestAlwaysAuthorization()
         }
     }

@@ -9,14 +9,14 @@
 import Foundation
 
 public struct VehicleResponse: Codable, Equatable {
-    let id: Int
-    let name: String
-    let description: String
-    let latitude: Double
-    let longitude: Double
-    let batteryLevel: Double
-    let timestamp: String
-    let price: Double
-    let priceTime: Double
-    let currency: String
+    public let id: Int
+    public let name: String
+    public let description: String
+    public let latitude: Double
+    public let longitude: Double
+    public let batteryLevel: Double
+    public let timestamp: String
+    public let price: Double
+    public let priceTime: Double
+    public let currency: String
 }

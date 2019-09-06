@@ -19,7 +19,7 @@ public struct API {
 
     // MARK: - Initialization
 
-    public init(baseURL: URL = URL(string: "https://my-json-server.typicode.com/FlashScooters/Challenge")!) {
+    public init(baseURL: URL = URL(string: "https://minikin-json-server.herokuapp.com/vehicles")!) {
         self.baseURL = baseURL
     }
 }
